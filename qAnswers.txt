@@ -1,0 +1,30 @@
+PART ONE:
+
+In your own terms, define the following terms:
+
+- What is HTTP?
+    defined as 'Hypertext Transfer Protocol'. Protocols are a set of rules on what the format of communication should be. So HTTP is defining the format of communication for web servers.
+- What is a URL?
+    defined as 'Universal Resource Locators'. URLs are not only used on browsers, but other places as well. It breaks down the protocol, hostname, port, resource, and/or query for the server.
+- What is DNS?
+    defined as 'Domain Name System'. It's like aphone book for IP Addresses.
+- What is a query string?
+    It's the string one would put in a search bar. It's an arguement.
+- What are two HTTP verbs and how are they different?
+    GET and POST. GET requests without side effects and POSt requests with side effects. When I say side-effects, I mean GET usually sends arguments through the query string, not affecting the data on the server at all. Whereas POST will send a request through the body, therefore changing the data on the server.
+- What is an HTTP request?
+    A HTTP request uses a method and comes from the web browser.
+- What is an HTTP response?
+    An HTTP response is when the server pulls the correct data and sends it to the web browser so you can view the requested URL page.
+- What is an HTTP header? Give a couple examples of request and response headers you have seen.
+    An HTTP header is the bits of data sent from the web broswer to the server. The server will also have header data it sends back to the web broswer.
+    A couple examples:
+        content-type: text/html
+        Accept-Language: en;q=0.8
+- What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+    1. the broswer resolves the name into an IP Address using DNS
+    2. the web browser will send a request to the site's server using the URL and header data it has. (Request)
+    3. the site's server will talk to the database server and grab the requested information, if it exists. (Internal Work)
+    4. the site's server will send the data it retrieved back to the web broswer to be loaded. (Response)
+    5. The browser makes a DOM from that HTML and finds anything else needed.
+    6. The browser makes separate HTTP requests for those resources and receives response from the server for each
